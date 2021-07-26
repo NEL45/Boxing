@@ -1,0 +1,86 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}BOXEURS
+{% endblock %}
+
+{% block header %}{% endblock %}
+{% block body %}
+	{# <h1>{{ website }}</h1> #}
+	<main class="container-fluid position-absolute top-50 start-50 translate-middle col-xl-12 col-xxl-6">
+		<div class="row">
+			<div class="card" style="width: 18rem;">
+				<img src="{{ asset('uploads/' ~ users.imageName) }}" alt="{{ users.name }} poster" class="rounded">
+				<div class="card-body">
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				</div>
+			</div>
+			<div class="card" style="width: 18rem;">
+				<img src="{{ vich_uploader_asset(users) }}" alt="{{ users.name }}" class="card-img-top" alt="...">
+				<div class="card-body">
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				</div>
+			</div>
+			<div class="card" style="width: 18rem;">
+				<img src="{{ vich_uploader_asset(users) }}" alt="{{ users.name }}" class="card-img-top" alt="...">
+				<div class="card-body">
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				</div>
+			</div>
+			<div class="card" style="width: 18rem;">
+				<img src="{{ vich_uploader_asset(users) }}" alt="{{ users.name }}" class="card-img-top" alt="...">
+				<div class="card-body">
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				</div>
+			</div>
+			<div class="card" style="width: 18rem;">
+				<img src="{{ vich_uploader_asset(users) }}" alt="{{ users.name }}" class="card-img-top" alt="...">
+				<div class="card-body">
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				</div>
+			</div>
+			<div class="card" style="width: 18rem;">
+				<img src="{{ vich_uploader_asset(users) }}" alt="{{ users.name }}" class="card-img-top" alt="...">
+				<div class="card-body">
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				</div>
+			</div>
+			<div class="card" style="width: 18rem;">
+				<img src="{{ vich_uploader_asset(users) }}" alt="{{ users.name }}" class="card-img-top" alt="...">
+				<div class="card-body">
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				</div>
+			</div>
+			<div class="card" style="width: 18rem;">
+				<img src="{{ vich_uploader_asset(users) }}" alt="{{ users.name }}" class="card-img-top" alt="...">
+				<div class="card-body">
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				</div>
+			</div>
+			<div class="card" style="width: 18rem;">
+				<img src="{{ vich_uploader_asset(users) }}" alt="{{ users.name }}" class="card-img-top" alt="...">
+				<div class="card-body">
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				</div>
+			</div>
+			<div class="card" style="width: 18rem;">
+				<img src="{{ vich_uploader_asset(users) }}" alt="{{ users.name }}" class="card-img-top" alt="...">
+				<div class="card-body">
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				</div>
+			</div>
+			<div class="card" style="width: 18rem;">
+				<img src="{{ vich_uploader_asset(users) }}" alt="{{ users.name }}" class="card-img-top" alt="...">
+				<div class="card-body">
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				</div>
+			</div>
+			<div class="card" style="width: 18rem;">
+				<img src="{{ vich_uploader_asset(users) }}" alt="{{ users.name }}" class="card-img-top" alt="...">
+				<div class="card-body">
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				</div>
+			</div>
+		</div>
+	</main>
+
+{% endblock %}

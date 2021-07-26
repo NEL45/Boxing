@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Permanent+Marker&display=swap');
+
+$primary: rgba(38,108,131,255);
+$secondary: rgb(57,160,177);
+$tertiary: rgb(154,51,64);
+$quartenary: rgb(190,178,161);
+$quinary: rgba(28,77,99,255);
+$senary: rgb(92,76,66);
+$opacity: opacify($color: rgba(255, 255, 255, 0.09), $amount: -0);
+
+$title-font: 'Pacifico', cursive;
+$big-title-font: 'Permanent Marker', cursive;
+

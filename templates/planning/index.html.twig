@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Planning index{% endblock %}
+
+{% block body %}
+<div class="d-flex justify-content-center">
+    <div class="testimony-admin row col-lg-6 col-md-8 mb-4">
+    <h1 class="text-center mt-5">Planning index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Time</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for plannings in planning %}
+            <tr>
+                <td>{{ plannings.date ? plannings.date|date('d-m-Y') : '' }}</td>
+                <td>{{ plannings.date ? plannings.date|date('H:i:s') : '' }}</td>
+                <td>
+                    <a class="btn btn-primary text-light mx-2 px-3" href="{{ path('planning_show', {'id': plannings.id}) }}">show</a>
+                    <a class="btn btn-primary text-light mx-2 px-3" href="{{ path('planning_edit', {'id': plannings.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="5">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a class="btn btn-primary text-light mx-2 px-3" href="{{ path('planning_new') }}">Create new</a>
+    </div>
+{% endblock %}

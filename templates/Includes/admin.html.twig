@@ -1,0 +1,30 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}Administration
+{% endblock %}
+
+{% block body %}
+	<header class="container-fluid m-3 p-2"></header>
+	<main class="container">
+		<div class="fw-bold text-center">
+			<p class="titre">Accès administrateur</p>
+		</div>
+		<div class="card m-2 intro">
+			<div class="card-header">
+				Mettre à jour vos données
+			</div>
+			<div class="card-body">
+				<div class="row p-4">
+					<div class="d-flex flex-column mb-3">
+						<div class="row m-2">
+							<a href="{{ path('users_index') }}" class="btn btn-primary"></a>
+						</div>
+						<div class="row m-2">
+							<a href="{{ path('planning_index') }}" class="btn btn-primary"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+{% endblock %}

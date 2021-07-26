@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Users{% endblock %}
+
+{% block body %}
+    <h1>Users</h1>
+<div class="d-flex justify-content-center">
+    <div class="testimony-admin row col-lg-6 col-md-8 mb-4">
+    <table class="table bg-primary">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ users.id }}</td>
+            </tr>
+            <tr>
+                <th>Name</th>
+                <td>{{ users.name }}</td>
+            </tr>
+            <tr>
+                <th>Lastname</th>
+                <td>{{ users.lastname }}</td>
+            </tr>
+            <tr>
+                <th>Weight</th>
+                <td>{{ users.weight }}</td>
+            </tr>
+            <tr>
+                <th>Role_coach</th>
+                <td>{{ users.roleCoach }}</td>
+            </tr>
+            <tr>
+                <th>Role_licensee</th>
+                <td>{{ users.roleLicensee }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a class="btn btn-primary text-dark mx-2 px-3 col-3" href="{{ path('users_index') }}">back to list</a>
+
+    <a class="btn btn-primary text-dark mx-2 px-3 col-3" href="{{ path('users_edit', {'id': users.id}) }}">edit</a>
+
+    {{ include('users/_delete_form.html.twig') }}
+    </div>
+{% endblock %}
