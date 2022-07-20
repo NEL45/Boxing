@@ -22,6 +22,6 @@ class LicenseesController extends AbstractController
     {
         return $this->render('licencies/index.html.twig', [
             'users' => $usersRepository->findBy([], ['name' => 'DESC']),
-         ]);
+        ]);
     }
 }

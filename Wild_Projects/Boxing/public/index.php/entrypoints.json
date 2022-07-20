@@ -1,0 +1,14 @@
+{
+  "entrypoints": {
+    "app": {
+      "js": [
+        "/Wild_Projects/Boxing/runtime.js",
+        "/Wild_Projects/Boxing/vendors-node_modules_symfony_stimulus-bridge_dist_index_js-node_modules_core-js_modules_es_ob-7db861.js",
+        "/Wild_Projects/Boxing/app.js"
+      ],
+      "css": [
+        "/Wild_Projects/Boxing/app.css"
+      ]
+    }
+  }
+}
